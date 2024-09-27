@@ -1,0 +1,74 @@
+{
+ "context": {
+      "domain": "ONDC:RET10",
+      "location": {
+        "country": {
+          "code": "IND"
+        },
+        "city": {
+          "code": "*"
+        }
+      },
+      "version": "2.0.2",
+      "action": "search",
+      "transaction_id": "367015ba-faea-4ebd-8de2-7fdbd0a6ba4f",
+      "message_id": "3fb558e4-d777-49d4-a9d1-2ba4ea036d82",
+      "timestamp": "2024-09-27T06:07:53.788Z",
+      "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+      "bap_id": "ondc.sequelstring.com/buyer/protocol",
+      "ttl": "PT30S"
+    },
+    "message": {
+      "intent": {
+        "category": {
+          "id": "RET10-*"
+        },
+        "fulfillment": {
+          "type": "Delivery"
+        },
+        "payment": {
+          "type": "ON-FULFILLMENT"
+        },
+        "tags": [
+          {
+            "descriptor": {
+              "code": "bap_terms"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "finder_fee_type"
+                },
+                "value": "percent"
+              },
+              {
+                "descriptor": {
+                  "code": "finder_fee_amount"
+                },
+                "value": "0"
+              }
+            ]
+          },
+          {
+            "descriptor": {
+              "code": "buyer_id"
+            },
+            "list": [
+              {
+                "descriptor": {
+                  "code": "buyer_id_code"
+                },
+                "value": "gst"
+              },
+              {
+                "descriptor": {
+                  "code": "buyer_id_no"
+                },
+                "value": "xxxxxxxxxxxxxxx"
+              }
+            ]
+          }
+        ]
+      }
+    }
+}
